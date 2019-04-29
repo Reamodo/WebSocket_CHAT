@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="chat">
+        <div class="hide">
+            <input type="text" class="username" placeholder="Username">
+            <input type="submit" value="Rejoindre" class="join" >
+        </div>
+        <div class="messages">
+            <ul>
+                
+            </ul>
+            <div class="sendMessage">
+                <input type="text" class="message">
+                <input type="submit" value="Envoyer" class="send">
+            </div>
+        </div>
+
+    </div>
+    <!--socket.io créé une route sur le serveur, qui permettra d'insérer socket.io coté client-->
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
